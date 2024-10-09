@@ -1,0 +1,410 @@
+/* General */
+/* Cambiar el color de fondo y el color del texto */
+.btn {
+    background-color: #70C1F8;
+    /* Color amarillo */
+    color: #666666;
+    /* Color del texto */
+    border-radius: 12px;
+    /* Puedes ajustar la redondez */
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    border-color: #cacaca;
+    color: #8E8E8E;
+}
+
+/* Cuando el botón es pulsado o está activo */
+.btn-primary:hover {
+    background-color: #BAC6FF;
+    /* Cambia el color en hover */
+}
+
+/* Fuentes */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Puedes cambiarlo por la fuente que prefieras */
+}
+
+/* Si deseas cambiar para títulos o botones de manera específica */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', serif;
+    /* Fuente diferente para los títulos */
+}
+
+.btn {
+    font-family: 'Verdana', sans-serif;
+    /* Fuente específica para botones */
+}
+
+
+/* Seccion general y desplazamiento sobre la web */
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+    /* Añade un desplazamiento suave al navegar */
+    scroll-padding-top: 64px;
+    /* Ajusta este valor según la altura de tu menú */
+
+}
+
+/* Bajar cabecera de seccion en el desplazamiento */
+section {
+    scroll-margin-top: 60px;
+    /* Ajusta el valor según sea necesario */
+}
+
+/* Contenedor general para ajustar el ancho */
+.container {
+    max-width: 1200px;
+    /* Asegura que el contenido no se extienda demasiado en pantallas grandes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Desarrollado por Javier Sanjuanelo */
+
+/* Hero */
+
+/* Nosotros */
+
+
+/* Aplica un margen superior al hacer scroll a la sección con id "nosotros" */
+#seccion_2 {
+    scroll-margin-top: 86px;
+    /* Ajusta este valor según la altura de tu cabecera */
+}
+
+#seccion_2 {
+    padding-left: 20px;
+    /* Ajusta el valor según sea necesario */
+    margin-left: 32px;
+    margin-right: 24px;
+    max-width: 1200px;
+    /* Asegura que el contenido no se extienda demasiado */
+}
+
+
+
+
+/* Indicadores del carrusel */
+
+.carousel-indicators [data-bs-target] {
+    background-color: #BAC6FF;
+    /* Color de los puntos inactivos */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /* Puntos circulares */
+    margin-top: 70px;
+    /* Posición del margen superior */
+    margin-bottom: -32px;
+    /* Ajuste del margen inferior */
+    align-items: center;
+    /* Alineación central */
+}
+
+/* Puntos activos del carrusel */
+.carousel-indicators .active {
+    background-color: #BAC6FF;
+    /* Color de los puntos activos */
+    width: 15px;
+    height: 15px;
+    margin-top: 70px;
+    /* Posición del margen superior */
+    margin-bottom: -32px;
+    /* Ajuste del margen inferior */
+    align-items: center;
+    /* Alineación central */
+}
+
+
+/* Seccion Testimonios */
+
+.carousel-item blockquote {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    color: white;
+}
+
+/* Ajustar la altura del contenedor del testimonial */
+.carousel-inner-testimonios {
+    height: 300px;
+    /* Ajusta según sea necesario */
+}
+
+/* Estilo para los puntos del carrusel de testimonios */
+#carouselTestimonios .carousel-indicators [data-bs-target] {
+    background-color: #BAC6FF;
+    /* Color de los puntos inactivos */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 20px;
+    /* Ajuste de posición */
+    margin-bottom: -20px;
+}
+
+#carouselTestimonios .carousel-indicators .active {
+    background-color: BAC6FF;
+    width: 15px;
+    height: 15px;
+    margin-bottom: -20px;
+
+}
+
+/* Para ajustar el espaciado entre las tarjetas en dispositivos pequeños */
+@media (max-width: 768px) {
+    .col-md-3 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Seccion Contactenos */
+.contacto {
+    padding-left: 50px;
+    /* Ajusta este valor según lo que necesites para la alineación */
+    padding-right: 50px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/* Ajuste de la imagen para que se alinee con el contenedor */
+.contacto .ajuste-imagen {
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Título de la sección alineado a la izquierda */
+.contacto .titulo-seccion {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #3b3b3b;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo para las etiquetas y campos de formulario */
+.contacto .form-label {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    color: #3b3b3b;
+}
+
+/* Campos del formulario sin recuadro, solo una línea */
+.contacto .sin-recuadro {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    padding: 8px 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contacto .sin-recuadro:focus {
+    border-bottom: 2px solid #28a745;
+    outline: none;
+}
+
+/* Estilo del botón de enviar */
+.contacto .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 42px;
+    border-radius: 5px;
+}
+
+/* Ajuste de la altura de la imagen y el formulario */
+.contacto .row.align-items-center {
+    min-height: 450px;
+    /* Ajusta la altura mínima del contenedor */
+}
+
+/* Badge (etiqueta) sobre la imagen */
+.contacto .badge {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #0050CA;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer h4,
+.footer h5 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer p,
+.footer li {
+    color: #ccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFDE59;
+}
+
+/* Ajuste de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .row.mt-4 {
+    margin-top: 20px;
+    border-top: 1px solid #3873FF;
+    padding-top: 20px;
+}
+
+.footer .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del contenedor negro con bordes redondeados */
+.footer .row.mt-4 {
+    background-color: #0050CA;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Boton modal para el registro del usuar */
+/* Creado por Javier Sanjuanelo */
+.modal-header {
+    background-color: #333;
+    color: white;
+}
+
+.modal .btn-primary {
+    background-color: #FFDE59;
+    /* Color verde personalizado */
+    border-color: none;
+    color: black;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.modal-footer a:hover {
+    color: #0a58ca;
+}
+
+.modal-changed {
+    background-color: #FFDE59;
+}
+
+
+/* Cambiar el color de fondo cuando el botón está activo (cuando haces clic) */
+.modal .btn-primary:active,
+.modal .btn-primary:focus {
+    background-color: #218838;
+    /* Color más oscuro */
+    border-color: #1e7e34;
+    box-shadow: none;
+    /* Elimina el borde de sombra que aparece por defecto */
+}
+
+/* Mantener el color hover cuando está activo */
+.modal .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Cambiar el color del botón secundario al hacer clic */
+.modal .btn-secondary:active,
+.modal .btn-secondary:focus {
+    background-color: #5a6268;
+    border-color: #545b62;
+    box-shadow: none;
+}
+
+
+/* Ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .col-md-6 {
+        text-align: center;
+    }
+}
